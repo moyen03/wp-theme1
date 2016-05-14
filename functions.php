@@ -123,6 +123,8 @@ function underscore_moyen_scripts() {
 
 	wp_enqueue_style('underscore-moyen_fontawesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 
+	wp_enqueue_script( 'underscore-moyen-side-search', get_template_directory_uri() . '/js/hide-search.js', array('jquery'), '20140328', true );
+
 	wp_enqueue_script( 'underscore-moyen-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), '20140328', true );
 
 	wp_enqueue_script( 'underscore-moyen-superfish-settings', get_template_directory_uri() . '/js/superfish-settings.js', array('underscore-moyen-superfish'), '20140328', true );

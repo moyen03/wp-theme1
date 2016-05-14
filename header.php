@@ -50,7 +50,10 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'underscore-moyen' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			<i class="fa fa-search"></i>
+			<div class="search-toggle">
+				<i class="fa fa-search"></i>
+				<a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'underscore-moyen' ); ?></a>
+			</div>
 			<?php underscore_moyen_social_menu(); ?>
 		</nav><!-- #site-navigation -->
 		<div id="search-container" class="search-box-wrapper clear">
