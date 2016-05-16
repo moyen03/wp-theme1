@@ -1115,49 +1115,16 @@ input[type="search"] {
 	border-bottom: solid 1px hsl(0, 0%, 90%);
 }
 
-.widget ul,
-.widget ol {
-	padding: 0;
-	margin: -1em 0 0;
-	list-style-type: none;
-}
+.widget_nav_menu li,
+.widget_pages li { padding-top: 0; }
 
-.widget li { padding: .5em 0 0; }
+.widget_rss li { margin-bottom: .5em; }
 
-.widget li ul,
-.widget li ol { margin-top: 0; }
-
-.widget li li { margin-left: 1.5em; }
-
-.widget_recent_entries li:before,
-.widget_recent_comments li:before,
-.widget_archive li:before {
+.widget_rss .rss-date,
+.widget_rss cite {
 	display: block;
-	float: left;
-	padding-top: 2px;
-	margin-left: -1.5em;
-	font-family: 'fontawesome';
-	font-size: 14px;
+	font-size: 80%;
 }
-
-.widget_recent_entries li,
-.widget_recent_comments li { margin: 0 0 0 1.5em; }
-
-.widget_recent_entries li:before { content: "\f036"; }
-
-.widget_recent_comments li:before { content: "\f075"; }
-
-.widget_archive li { margin: 0 0 0 1.5em; }
-
-.widget_archive li:before { content: "\f187"; }
-
-.widget_nav_menu a,
-.widget_pages a {
-	display: block;
-	padding: 1em 0;
-	border-bottom: solid 1px hsl(0, 0%, 90%);
-}
-
 
 /* Make sure select elements fit in widgets */
 .widget select {
@@ -1360,4 +1327,13 @@ object {
 .site-info {
 	text-align: center;
 }
+/* Footer widgets responsive */
+@media screen and (max-width: 879px) {
+	#footer-widgets { width: 100%!important; }
 
+	.footer-widgets .widget {
+		float: none;
+		width: 100%;
+		margin: 0 0 2rem;
+	}
+}
