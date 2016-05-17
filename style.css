@@ -259,7 +259,7 @@ th {
 }
 
 /*--------------------------------------------------------------
-# Typography
+# Typography #
 --------------------------------------------------------------*/
 body,
 button,
@@ -1344,17 +1344,17 @@ blockquote cite {
 	text-align: right;
 }
 blockquote.alignleft {
-	width: 50%;
+	width: 60%;
 	float: left;
 	padding: 1em 0 0;
-	margin-right: 2em;
+	margin-right: 1.5em;
 }
 
 blockquote.alignright {
-	width: 50%;
+	width: 60%;
 	float: right;
 	padding: 1em 0 0;
-	margin-left: 2em;
+	margin-left: 1.5em;
 }
 
 /* Blockquotes responsive */
