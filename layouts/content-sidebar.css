@@ -1,5 +1,10 @@
 .site-content {
+	padding-bottom: 1em;
 	background: #b2b2b2;
+}
+.single .site-content,
+.page .site-content {
+	background: #fff;
 }
 .site-content .widget-area {
 	width: 380px;
@@ -14,7 +19,6 @@
 
 .entry-header,
 .entry-content,
-.entry-meta,
 .entry-footer,
 .tag-links,
 .post-navigation,
@@ -43,7 +47,6 @@
 
 	.entry-header,
 	.entry-content,
-	.entry-meta,
 	.entry-footer,
 	.tag-links,
 	.post-navigation,

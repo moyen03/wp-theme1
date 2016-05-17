@@ -12,7 +12,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-			if ( is_single() ) {
+		$categories_list = get_the_category_list( esc_html__( ', ', 'underscore-moyen' ) );
+		if ( $categories_list && underscore_moyen_categorized_blog() ) {
+		printf( $categories_list ); // WPCS: XSS OK.
+		}
+
+		if ( is_single() ) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			} else {
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
@@ -21,6 +26,14 @@
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php underscore_moyen_posted_on(); ?>
+
+			<?php
+			if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+				echo '<span class="comments-link">';
+				/* translators: %s: post title */
+				comments_popup_link( __( 'Leave a Comment', 'underscore-moyen' ), __( '1 Comment', 'underscore-moyen' ), __( ' % Comment', 'underscore-moyen' ) );
+				echo '</span>';
+			} ?>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
