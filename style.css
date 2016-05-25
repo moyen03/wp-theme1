@@ -823,7 +823,7 @@ input[type="search"] {
 	float: right;
 	width: 54px;
 	height: 54px;
-	padding: 5px;
+	padding-top: 5px;
 	color: #fff;
 	text-align: center;
 	cursor: pointer;
