@@ -1565,6 +1565,51 @@ object {
 	margin: 0 auto;
 	border: none;
 }
+
+/*--------------------------------------------------------------
+ single post navigation
+--------------------------------------------------------------*/
+
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	color: #000;
+}
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	width: 50%;
+	float: left;
+	padding-right: 15%;
+}
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	width: 50%;
+	float: right;
+	padding-left: 15%;
+	text-align: right;
+}
+
+.nav-indicator {
+	margin-bottom: 1em;
+}
+
+.nav-previous h1,
+.nav-next h1 {
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.post-nav-box {
+	padding: 2em 0;
+	margin-bottom: 4em;
+	border-top: hsl(0, 0%, 80%) solid 1px;
+	border-bottom: hsl(0, 0%, 80%) solid 1px;
+}
+
 /*--------------------------------------------------------------
  Footer
 --------------------------------------------------------------*/
