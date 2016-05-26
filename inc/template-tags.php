@@ -55,7 +55,7 @@ function underscore_moyen_entry_footer() {
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'underscore-moyen' ),
+			__( 'Edit %s', 'underscore-moyen' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
 		'<span class="edit-link">',
