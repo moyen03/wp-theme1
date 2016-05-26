@@ -21,10 +21,10 @@ get_header(); ?>
 			?>
 			<nav class="navigation post-navigation" role="navigation">
 				<div class="post-nav-box clear">
-					<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'my-simone' ); ?></h1>
+					<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'underscore-moyen' ); ?></h1>
 					<div class="nav-links">
 						<?php
-						previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . _x( 'Previous Post:', 'Previous post', 'my-simone' ) . '</div><h1>%link</h1></div>', '%title' );
+						previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . _x( 'Previous Post:', 'Previous post', 'underscore-moyen' ) . '</div><h1>%link</h1></div>', '%title' );
 						next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . _x( 'Next Post:', 'Next post', 'my-simone' ) . '</div><h1>%link</h1></div>', '%title' );
 						?>
 					</div><!-- .nav-links -->
