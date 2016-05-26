@@ -1491,14 +1491,13 @@ ol.comment-list { margin-left: 50px; }
 }
 
 .comment-reply-title {
-	margin-bottom: .5em;
+	margin-bottom: 1em;
 	font-weight: 900;
 	font-size: 30px;
-	font-size: 3rem;
 }
 
 .comment-form {
-	padding-bottom: 4rem;
+	padding-bottom: 3rem;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 }
@@ -1512,8 +1511,8 @@ ol.comment-list { margin-left: 50px; }
 
 .required { color: red; }
 
-.comment-awaiting-moderation { /* Green background color to make moderation seem less aggressive */
-	padding: .5rem 1rem;
+.comment-awaiting-moderation {
+	padding: 1rem 1rem;
 	margin: 1rem 0;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
