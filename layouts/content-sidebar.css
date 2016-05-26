@@ -1,6 +1,6 @@
 .site-content {
-	padding-bottom: 1em;
-	background: #b2b2b2;
+	padding-bottom: 4em;
+	background: #b2b2b2 url(../images/pattern.svg) repeat;
 }
 .single .site-content,
 .page .site-content {
