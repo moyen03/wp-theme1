@@ -1490,8 +1490,12 @@ ol.comment-list { margin-left: 50px; }
 	.reply { margin-left: 0; }
 }
 
-.bypostauthor {
-	display: block;
+.bypostauthor > .comment-body {
+	position: relative;
+	padding: 1em;
+	margin-bottom: 2em;
+	background: hsl(0, 0%, 93%);
+	border: none;
 }
 
 /*--------------------------------------------------------------
