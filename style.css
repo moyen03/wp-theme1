@@ -379,7 +379,6 @@ tt,
 var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
-	font-size: 0.9375rem;
 }
 
 abbr,
@@ -1758,7 +1757,7 @@ Index and Archive
 	font-size: 18px;
 }
 
-.continue-reading i { margin-left: .5em; }
+.continue-reading i { margin-left: 1em; }
 
 /*--------------------------------------------------------------
  Footer
@@ -1787,4 +1786,10 @@ Index and Archive
 		width: 100%;
 		margin: 0 0 2rem;
 	}
+}
+
+
+.small-index-thumbnail {
+	margin-top: -1em;
+	margin-bottom: 1em;
 }

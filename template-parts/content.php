@@ -12,6 +12,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="index-box">
+		<?php
+		if (has_post_thumbnail()) {
+			echo '<div class="small-index-thumbnail clear">';
+			echo '<a href="' . get_permalink() . '" title="' . __('Please Click To Read More', 'underscore-moyen') . get_the_title() . '" rel="bookmark">';
+			echo the_post_thumbnail('index-thumb');
+			echo '</a>';
+			echo '</div>';
+		}
+		?>
 	<header class="entry-header clear">
 		<?php
 		$categories_list = get_the_category_list( esc_html__( ', ', 'underscore-moyen' ) );
