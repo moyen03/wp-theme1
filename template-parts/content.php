@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="index-box">
-	<header class="entry-header">
+	<header class="entry-header clear">
 		<?php
 		$categories_list = get_the_category_list( esc_html__( ', ', 'underscore-moyen' ) );
 		if ( $categories_list && underscore_moyen_categorized_blog() ) {
@@ -53,22 +53,11 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'underscore-moyen' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'underscore-moyen' ),
-				'after'  => '</div>',
-			) );
-		?>
+		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-
-	</footer><!-- .entry-footer -->
+		<footer class="entry-footer continue-reading">
+			<?php echo '<a href="' . get_permalink() . '" title="' . __('Continue Reading ', 'underscore-moyen') . get_the_title() . '" rel="bookmark">Continue Reading<i class="fa fa-arrow-circle-o-right"></i></a>'; ?>
+		</footer><!-- .entry-footer -->
 	</div> <!-- .index-box -->
 </article><!-- #post-## -->
