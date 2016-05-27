@@ -1559,6 +1559,26 @@ ol.comment-list { margin-left: 50px; }
 		float: right;
 	}
 }
+
+.front-index-thumbnail {
+	margin-bottom: -3.2em;
+}
+
+@media screen and (max-width: 779px){
+	.front-index-thumbnail {
+		margin-bottom: 0;
+	}
+}
+.single-post-thumbnail img,
+.front-index-thumbnail img {
+	display: block;
+	margin: 0 auto;
+}
+
+.has-thumbnail {
+	position: relative;
+	margin-top: -8em;
+}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
