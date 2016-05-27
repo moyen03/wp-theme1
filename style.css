@@ -1853,3 +1853,11 @@ Index and Archive
 	top: .5rem;
 	right: 0;
 }
+.taxonomy-description {
+	padding-top: 2rem;
+	margin: 2rem 0;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	border-top: 1px solid hsl(0, 0%, 75%);
+	border-bottom: 1px solid hsl(0, 0%, 75%);
+}

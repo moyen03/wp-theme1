@@ -85,7 +85,7 @@
 	<?php
 	if( $wp_query->current_post == 0 && !is_paged() && is_front_page() ) {
 		echo '<div class="entry-content">';
-		the_content( __( '', 'my-simone' ) );
+		the_content( __( '', 'underscore-moyen' ) );
 		echo '</div>';
 		echo '<footer class="entry-footer continue-reading">';
 		echo '<a href="' . get_permalink() . '" title="' . __('Read ', 'underscore-moyen') . get_the_title() . '" rel="bookmark">Read the article<i class="fa fa-arrow-circle-o-right"></i></a>';

@@ -25,7 +25,8 @@
 .comments-area,
 .paging-navigation,
 .index-box,
-.custom_navigation {
+.custom_navigation,
+.page-header {
 	position: relative;
 	max-width: 780px;
 	margin: 0 auto;
@@ -55,7 +56,8 @@
 	.comments-area,
 	.paging-navigation,
 	.index-box,
-	.custom_navigation {
+	.custom_navigation,
+	.page-header {
 		margin-right: 0 !important;
 	}
 
@@ -91,11 +93,15 @@
 @media screen and (min-width: 1320px) {
 	.index-box blockquote.alignleft { padding-left: 2em; }
 }
-
+.page-header,
 .custom_navigation {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	margin-bottom: 2em;
 	list-style-type: none;
 	background: #fff;
+}
+.page-title,
+.taxonomy-description {
+	margin-left: 40px;
 }
