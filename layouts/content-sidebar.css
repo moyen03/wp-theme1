@@ -24,7 +24,8 @@
 .post-navigation,
 .comments-area,
 .paging-navigation,
-.index-box {
+.index-box,
+.custom_navigation {
 	position: relative;
 	max-width: 780px;
 	margin: 0 auto;
@@ -53,7 +54,8 @@
 	.post-navigation,
 	.comments-area,
 	.paging-navigation,
-	.index-box {
+	.index-box,
+	.custom_navigation {
 		margin-right: 0 !important;
 	}
 
@@ -67,7 +69,9 @@
 		margin: 1em auto 0;
 	}
 }
-.index-box {
+.index-box,
+.custom_navigation
+{
 	max-width: 780px;
 	padding: 1em 2em;
 	margin: 0 auto 2em;
@@ -86,4 +90,12 @@
 
 @media screen and (min-width: 1320px) {
 	.index-box blockquote.alignleft { padding-left: 2em; }
+}
+
+.custom_navigation {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	list-style-type: none;
+	background: #fff;
 }

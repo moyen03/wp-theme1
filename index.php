@@ -40,9 +40,9 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			wpbeginner_numeric_posts_nav();
 
-		else :
+			else :
 
 			get_template_part( 'template-parts/content', 'none' );
 

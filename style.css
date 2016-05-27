@@ -1693,13 +1693,48 @@ object {
 }
 
 /*--------------------------------------------------------------
+ Index page custom navigation
+--------------------------------------------------------------*/
+.custom_navigation ul {
+	margin: 0;
+}
+
+.custom_navigation li a,
+.custom_navigation li a:hover,
+.custom_navigation li.active a,
+.custom_navigation li.disabled {
+	text-decoration:none;
+}
+
+.custom_navigation li {
+	display: inline;
+}
+
+.custom_navigation li a,
+.custom_navigation li a:hover,
+.custom_navigation li.active a,
+.custom_navigation li.disabled {
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 5px 12px;
+}
+.custom_navigation li.active a {
+	color: #fff;
+}
+
+.custom_navigation li a:hover,
+.custom_navigation li.active a {
+	background-color: #3C8DC5;
+}
+
+/*--------------------------------------------------------------
  single post navigation
 --------------------------------------------------------------*/
 
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	color: #000;
 }
