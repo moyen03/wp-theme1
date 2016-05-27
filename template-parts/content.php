@@ -23,6 +23,12 @@
 		?>
 	<header class="entry-header clear">
 		<?php
+		// Display a thumb tack in the top right hand corner if this post is sticky
+		if (is_sticky()) {
+			echo '<i class="fa fa-thumb-tack sticky-post"></i>';
+		}
+		?>
+		<?php
 		$categories_list = get_the_category_list( esc_html__( ', ', 'underscore-moyen' ) );
 		if ( $categories_list && underscore_moyen_categorized_blog() ) {
 		printf( $categories_list ); // WPCS: XSS OK.

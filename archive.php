@@ -35,7 +35,7 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			underscore_moyen_numeric_posts_nav();
 
 		else :
 

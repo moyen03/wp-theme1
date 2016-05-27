@@ -6,7 +6,7 @@
  * Time: 11:00
  */
 
-function wpbeginner_numeric_posts_nav() {
+function underscore_moyen_numeric_posts_nav() {
 
     if( is_singular() )
         return;

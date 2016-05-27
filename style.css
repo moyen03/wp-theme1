@@ -1828,3 +1828,8 @@ Index and Archive
 	margin-top: -1em;
 	margin-bottom: 1em;
 }
+.sticky-post {
+	position: absolute;
+	top: .5rem;
+	right: 0;
+}

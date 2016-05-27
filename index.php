@@ -40,7 +40,7 @@ get_header(); ?>
 
 			endwhile;
 
-			wpbeginner_numeric_posts_nav();
+			underscore_moyen_numeric_posts_nav();
 
 			else :
 
