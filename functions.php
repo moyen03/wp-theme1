@@ -16,6 +16,11 @@ if ( ! function_exists( 'underscore_moyen_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function underscore_moyen_setup() {
+
+	// This theme styles the visual editor to resemble the theme style.
+	$font_url = 'http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,900,900italic|PT+Serif:400,700,400italic,700italic';
+	add_editor_style( array( 'inc/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
+
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
