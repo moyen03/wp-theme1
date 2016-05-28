@@ -129,8 +129,11 @@ add_action( 'widgets_init', 'underscore_moyen_widgets_init' );
 function underscore_moyen_scripts() {
 	wp_enqueue_style( 'underscore-moyen-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'underscore-moyen-content-sidebar' , get_template_directory_uri() . '/layouts/content-sidebar.css');
-
+	if (is_page_template('page-templates/page-nosidebar.php')) {
+		wp_enqueue_style( 'underscore-moyen-layout-style' , get_template_directory_uri() . '/layouts/page-nosidebar.css');
+	} else {
+		wp_enqueue_style( 'underscore-moyen-layout-style' , get_template_directory_uri() . '/layouts/content-sidebar.css');
+	}
 	wp_enqueue_style( 'underscore-moyen-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:100,300,400,400italic,700,900,900italic|PT+Serif:400,700,400italic,700italic' );
 
 	wp_enqueue_style('underscore-moyen_fontawesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');

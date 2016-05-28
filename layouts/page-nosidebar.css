@@ -1,0 +1,36 @@
+/*
+Theme Name: underscore-moyen
+Layout: No sidebar
+*/
+
+.page .site-content {
+	background: #fff;
+}
+
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+
+.entry-header,
+.entry-content,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation,
+.custom_navigation,
+.page-header {
+	position: relative;
+	max-width: 780px;
+	margin: 0 auto;
+}
+
+.page-header,
+.custom_navigation {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	list-style-type: none;
+	background: #fff;
+}
